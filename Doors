@@ -9,6 +9,7 @@ local Tab4 = Window:NewTab("Credit")
 local Tab1Section = Tab1:NewSection("This is my first roblox doors gui, sorry if its bad!")
 local Tab1Section = Tab1:NewSection("I hope you enjoy the GUI :)")
 local Tab2Section = Tab2:NewSection("Items")
+local Tab3Section = Tab3:NewSection("Entities pog")
 
 
 Tab2Section:NewButton("Crucifix", "ButtonInfo", function()
@@ -55,6 +56,19 @@ Tab1Section:NewButton("King hub Mobile", "op", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
 end)
 
-Tab2Section:NewButton("COMING SOON", "COMING SOON", function()
-    print("Clicked")
+Tab2Section:NewButton("Crucifix 2", "O", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/exertevent/Scripts/main/Crucifix"))()
 end)
+
+Tab3Section:NewButton("spawn screech", "spawns screech", function()
+    require(game.StarterGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech)(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+end)
+
+Tab3Section:NewButton("Spawn Halt", "Careful, Turn around!", function()
+    print("Summoned.")
+ 
+    require(game.ReplicatedStorage.ClientModules.EntityModules.Shade).stuff(require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game),
+workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
+end)
+
