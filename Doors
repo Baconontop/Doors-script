@@ -47,14 +47,14 @@ shadow.Unequipped:Connect(function()
 end)
 end)
 
-Tab1Section:NewButton("Vynix (PC)", "op", function()
+Tab1Section:NewButton("Vynix PC", "op", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
 end)
 
-Tab1Section:NewButton("King hub (Mobile)", "ButtonInfo", function()
+Tab1Section:NewButton("King hub Mobile", "op", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
 end)
 
-Tab2Section:NewButton("Seek Crucifix (SHOP)", "ButtonInfo", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RmdComunnityScriptsProvider/AngryHub/main/Seek%20Crucifix.lua%22))()
+Tab2Section:NewButton("COMING SOON", "COMING SOON", function()
+    print("Clicked")
 end)
