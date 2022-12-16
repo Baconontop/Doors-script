@@ -72,7 +72,7 @@ Tab3Section:NewButton("Spawn Halt", "Careful, Turn around!", function()
 workspace.CurrentRooms[game.Players.LocalPlayer:GetAttribute("CurrentRoom")])
 end)
 
-Tab3ection:NewButton("Ambush Killable", "Ampiss", function()
+Tab3Section:NewButton("Ambush Killable", "Ampiss", function()
     local EntitySpawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/Spawner_V2.lua"))()
 local Configuration = {
     Kill = true, -- change to "Damage = 10," for eyes, doesnt work on other entities
